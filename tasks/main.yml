@@ -5,6 +5,6 @@
     path: /etc/yum.conf
     section: main
     option: proxy
-    value: "{{ set_proxy4yum_dnf }}://{{ set_proxy4yum_dnf_hostname }}:{{ set_proxy4yum_dnf_port }}"
+    value: "{{ set_proxy4yum_dnf_scheme }}://{{ set_proxy4yum_dnf_hostname }}:{{ set_proxy4yum_dnf_port }}"
     backup: yes
   become: yes
