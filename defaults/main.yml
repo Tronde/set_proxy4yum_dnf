@@ -1,0 +1,5 @@
+---
+# defaults file for set_proxy4yum_dnf
+set_proxy4yum_dnf_scheme: "http"
+set_proxy4yum_dnf_hostname: "proxy.example.com" # FQDN or IP address
+set_proxy4yum_dnf_port: "3128"
