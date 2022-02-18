@@ -18,4 +18,5 @@
     value: "{{ set_proxy4yum_dnf_scheme }}://{{ set_proxy4yum_dnf_hostname }}:{{ set_proxy4yum_dnf_port }}"
     backup: yes
   become: yes
-  when: ansible_facts['distribution_major_version'] == "8"
+  when: (ansible_facts['distribution_major_version'] == "8") or
+        (ansible_facts['distribution_major_version'] == "9")
